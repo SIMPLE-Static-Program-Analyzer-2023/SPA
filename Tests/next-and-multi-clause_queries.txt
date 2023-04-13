@@ -1,0 +1,120 @@
+1 - wildcard wildcard
+variable v;
+Select v such that Next (_, _)
+x, y
+5000
+2 - wildcard integer
+while w;
+Select w such that Next (_, 2)
+5, 7
+5000
+3 - wildcard synonym
+while w;
+Select w such that Next (_, w)
+5, 7
+5000
+4 - integer wildcard
+variable v;
+Select v such that Next (1, _)
+x, y
+5000
+5 - integer integer
+variable v;
+Select v such that Next (1, 2)
+x, y
+5000
+6 - integer synonym
+assign a; stmt s;
+Select s such that Next (9, s)
+10
+5000
+7 - synonym wildcard
+if i;
+Select i such that Next (i, _)
+2
+5000
+8 - synonym integer
+stmt s;
+Select s such that Next (s, 2)
+1
+5000
+9 - synonym synonym
+while w; stmt s;
+Select s such that Next (w, s)
+5, 6, 8, 11
+5000
+10 - print read
+print pn; read rd;
+Select rd such that Next (rd, pn)
+3
+5000
+11 - print read
+assign a; if i;
+Select a such that Next (a, i)
+1
+5000
+11 - while while
+while w1, w2;
+Select w1 such that Next (w1, w2)
+7
+5000
+12 - while if
+while w; assign a;
+Select a such that Next (w, a)
+6, 8
+5000
+13 - next and next
+stmt s;
+Select s such that Next (1, s) and Next (s, 3)
+2
+5000
+14 - modifies and next
+stmt s; variable v;
+Select s such that Modifies (s, v) and Next (4, s)
+5
+5000
+15 - follows* and modifies
+stmt s; variable v;
+Select s such that Follows* (1, s) and Modifies(s, v)
+2
+5000
+16 - modifies and follows*
+stmt s; variable v;
+Select s such that Modifies(s, v) and Follows* (1, s)
+2
+5000
+17 - modifies and parent
+stmt s; variable v; if i;
+Select s such that Modifies(s, v) and Parent(i, s)
+3, 5, 9, 10
+5000
+18 - modifies and parent and next
+stmt s; variable v; if i; print pn;
+Select s such that Modifies(s, v) and Parent(i, s) and Next (pn, s)
+5
+5000
+19 - modifies and parent*
+stmt s; variable v; if i;
+Select s such that Modifies(s, v) and Parent* (i, s)
+3, 5, 6, 7, 8, 9, 10
+5000
+20 - modifies and parent* and 
+stmt s; variable v; if i;
+Select s such that Modifies(s, v) and Parent* (i, s) and Follows* (3, s)
+5
+5000
+21 - pattern
+stmt s; variable v; if i; assign a;
+Select a pattern a("y", _)
+6, 10
+5000
+22 - modifies and parent* select assign
+stmt s; variable v; if i; assign a;
+Select a such that Modifies(a, v) and Parent* (i, a)
+6, 8, 9, 10
+5000
+23 - modifies and parent* and pattern
+stmt s; variable v; if i; assign a;
+Select a such that Modifies(a, v) and Parent* (i, a) pattern a("y", _)
+6, 10
+5000

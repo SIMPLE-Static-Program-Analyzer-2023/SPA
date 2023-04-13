@@ -1,0 +1,131 @@
+1 -
+Stmt s;
+Select s
+SyntaxError
+5000
+2 -
+read r, ;
+Select r
+SyntaxError
+5000
+3 -
+print pr;
+Select pr;
+SyntaxError
+5000
+4 -
+while w; ifs w
+Select w
+SyntaxError
+5000
+5 -
+if ifs;
+Select v
+SyntaxError
+5000
+6 -
+assign a
+select a
+SyntaxError
+5000
+7 -
+variable v;
+Select
+SyntaxError
+5000
+8 -
+constant c,
+Select c
+SyntaxError
+5000
+9 -
+procedure xx;
+Select x
+SyntaxError
+5000
+10 - Uses(syn*,syn)
+stmt s; variable v;
+Select s Uses (s, v)
+SyntaxError
+5000
+11 - Uses(syn,syn*)
+stmt s; variable v;
+Select v suchthat Uses (s, v)
+SyntaxError
+5000
+12 - Uses(syn*,IDENT)
+stmt s;
+Select s such that uses (s, "a")
+SyntaxError
+5000
+13 - Uses(syn*,IDENT)
+stmt s; variable v;
+Select v such that Uses (s, )
+a, ab, abc
+SyntaxError
+5000
+14 - Uses(syn*,_)
+stmt s;
+Select s such that Uses (, _)
+SyntaxError
+5000
+15 - Uses(syn,_)
+stmt s; assign a;
+Select a such that Uses s, _)
+SyntaxError
+5000
+16 - Uses(INT,syn*)
+variable v;
+Select v such that Uses (8, v
+SyntaxError
+5000
+17 - Uses(INT,syn)
+variable v; assign a;
+Select a such that Uses {8, v}
+SyntaxError
+5000
+18 - Uses(INT,IDENT)
+stmt s;
+Select s such that Uses (8, "a");
+SyntaxError
+5000
+19 - Uses(_,_)
+stmt s;
+Select s such that Uses (_, _)
+SemanticError
+5000
+20 - Negative Uses(syn*,IDENT)
+stmt s;
+Select s such that Uses (s, 1)
+SemanticError
+5000
+21 - Negative Follows(INT,syn*)
+variable v; stmt s;
+Select s such that Follows (1, v)
+SemanticError
+5000
+22 - Negative Parent(_,IDENT)
+stmt s;
+Select s such that Parent (_, "x")
+SemanticError
+5000
+23 - Negative Parent(IDENT, _)
+stmt s;
+Select s such that Parent ("x", _)
+SemanticError
+5000
+24 - Pattern(INT, _)
+assign a;
+Select a Pattern a (1, _)
+SemanticError
+5000
+25 - Pattern(_, INT)
+assign a;
+Select a Pattern a (_, 1)
+SemanticError
+5000
+26 - Pattern(_, INT)
+assign a; variable v;
+Select a Pattern a (_, v)
+SemanticError
+5000

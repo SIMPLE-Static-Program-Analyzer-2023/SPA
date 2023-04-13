@@ -1,0 +1,24 @@
+procedure bar {
+    rootNode = proc2;
+    proc2 = stmt1;
+    x = 3;
+    y = 4;
+    if (((cop == q) && (!(((cop == q) && (cop == q)) || ((cop == q) && (cop == q))))) || ((cop == q) && (cop == q))) then {
+        if (!(!(!(y >= 69)))) then {
+            if ((z < 5)   &&   (!((3 < 5) || (x > 23) ))) then {
+                if (((cop == q) && (cop == q)) || ((cop == q) && (cop == q))) then {
+                    kobe = 24;
+                } else {
+                    b = 123;
+                }
+            } else {
+                happy = 99;
+            }
+        } else {
+            g = 3;
+        }
+    } else {
+        q = asd;
+    }
+}
+

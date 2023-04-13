@@ -1,0 +1,120 @@
+1 - single target no clause
+variable v; assign a;
+Select v
+x, y
+5000
+2 - single target
+variable v; assign a;
+Select a such that Uses (a, v)
+5, 7
+5000
+3 - single in diamond brackets
+variable v; assign a;
+Select <a> such that Uses (a, v)
+5, 7
+5000
+4 - 2 targets
+variable v; assign a;
+Select <a, v> such that Uses (a, v)
+5 y, 7 x
+5000
+5 - 2 targets
+variable v; assign a; if i; while w;
+Select <w, v> such that Uses (w, v)
+6 x, 6 y
+5000
+6 - 3 targets
+variable v; assign a; while w;
+Select <a, v, w> such that Uses (a, v) and Parent(w, a)
+7 x 6
+5000
+7 - no clause tuple of 2
+variable v; while w;
+Select <v, w>
+x 6, y 6
+5000 
+8 - no clause tuple of 3
+variable v; assign a; while w;
+Select <w, v, a>
+6 x 1, 6 x 2, 6 x 4, 6 x 5, 6 x 7, 6 y 1, 6 y 2, 6 y 4, 6 y 5, 6 y 7
+5000
+9 - 3 targets but 1 relationless
+variable v; assign a; while w;
+Select <w, v, a> such that Parent(w, a)
+6 x 7, 6 y 7
+5000 
+10 - 3 targets but 2 relationless
+variable v; assign a; while w;
+Select <w, v, a> such that Follows* (8, w)
+none
+5000
+11 - 3 targets but 2 relationless
+variable v; assign a; while w;
+Select <w, v, a> such that Modifies (a, "x")
+6 x 1, 6 y 1, 6 x 7, 6 y 7
+5000
+12 - 4 targets but 1 relationless
+variable v; assign a; while w; stmt s;
+Select <a, v, s, w> such that Uses (a, v) and Parent(w, a)
+7 x 1 6, 7 x 2 6, 7 x 3 6, 7 x 4 6, 7 x 5 6, 7 x 6 6, 7 x 7 6, 7 x 8 6
+5000
+13 - get combinations of a and v if unrelated statement is true
+assign a; variable v; read rd;
+Select <a, v> such that Modifies (rd, "x")
+1 x, 1 y, 2 x, 2 y, 4 x, 4 y, 5 x, 5 y, 7 x, 7 y
+5000
+14 - modifies and parent* 
+stmt s; variable v; if i; assign a;
+Select <a, i> such that Modifies(a, v) and Parent* (i, a)
+4 3, 5 3
+5000
+15 - modifies and parent* 
+stmt s; variable v; if i; assign a;
+Select <a, i, s> such that Modifies(a, v) and Parent* (i, a)
+4 3 1, 5 3 1, 4 3 2, 5 3 2, 4 3 3, 5 3 3, 4 3 4, 5 3 4, 4 3 5, 5 3 5, 4 3 6, 5 3 6, 4 3 7, 5 3 7, 4 3 8, 5 3 8
+5000
+16 - modifies and parent* and pattern
+stmt s; variable v; if i; assign a;
+Select <v, a> such that Modifies(a, v) and Parent* (i, a) pattern a("y", _)
+y 4, y 5
+5000
+17 - modifies and parent* and pattern
+stmt s; variable v; if i; assign a; while w;
+Select <v, a, i, w> such that Modifies(a, v) and Parent* (i, a) pattern a("y", _)
+y 4 3 6, y 5 3 6
+5000
+18 - modifies and parent* and pattern and follows*
+stmt s; variable v; if i; assign a; read rd;
+Select <a, v, s, rd, i> such that Modifies(a, v) and Parent* (i, a) pattern a("y", _) such that Uses(a, "y")
+5 y 1 8 3, 5 y 2 8 3, 5 y 3 8 3, 5 y 4 8 3, 5 y 5 8 3, 5 y 6 8 3, 5 y 7 8 3, 5 y 8 8 3
+5000
+19 - boolean no clauses
+variable v; assign a;
+Select BOOLEAN
+TRUE
+5000
+20 - boolean 1 clause
+variable v; assign a;
+Select BOOLEAN such that Next (1, a)
+TRUE
+5000
+21 - boolean 1 clause but not satisfied
+variable v; assign a;
+Select BOOLEAN such that Next (2, 1)
+FALSE
+5000
+22 - boolean 1 clause but not satisfied
+variable v; assign a;
+Select BOOLEAN such that Calls (_,_)
+FALSE
+5000
+23 - boolean query but there is a synonym named BOOLEAN
+variable BOOLEAN; assign a;
+Select BOOLEAN such that Uses(a, BOOLEAN)
+x, y
+5000
+24 - boolean 1 clause
+variable v; assign a; if i;
+Select BOOLEAN such that Modifies (i, v)
+TRUE
+5000

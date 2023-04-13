@@ -1,0 +1,112 @@
+name: CI for Cmake Project - Windows
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+# If you are doing triggering your workflow from pushes or merging more than twice a day on average,
+# please execute your workflow on a schedule instead.
+# Comment the above 7 lines, and uncomment the following 3 lines
+# on:
+#   schedule:
+#     - cron: "0 09,23 * * *"
+
+env:
+    BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: true
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Project
+        shell: bash
+        run: |
+          cd Team09/Code09
+          mkdir build
+          cd build
+          cmake -A Win32 ..
+          cmake --build . --target unit_testing --config Release
+          cmake --build . --target integration_testing --config Release
+          cd ../..
+          
+      - name: Unit Testing
+        shell: bash
+        run: |
+          cd Team09/Code09/build/src/unit_testing
+          ./Release/unit_testing.exe
+          
+  autotester:
+    runs-on: macos-latest
+    strategy:
+      fail-fast: true
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v1
+
+      - name: Create Build Environment
+        run: |
+          cmake -E make_directory ${{runner.workspace}}/build
+
+      - name: Configure CMake
+        shell: bash
+        working-directory: ${{runner.workspace}}/build
+        run: |
+          cmake $GITHUB_WORKSPACE/Team09/Code09/ -DCMAKE_BUILD_TYPE=$BUILD_TYPE
+
+      - name: Build Project
+        working-directory: ${{runner.workspace}}/build
+        shell: bash
+        run: |
+          cmake --build . --target autotester --config $BUILD_TYPE 
+
+      - name: Run Autotester
+        working-directory: ${{runner.workspace}}/build/src/autotester
+        shell: bash
+        run: |
+          ./autotester \
+          $GITHUB_WORKSPACE/Team09/Tests09/ms1_source.txt \
+          $GITHUB_WORKSPACE/Team09/Tests09/ms1_queries.txt \
+          $GITHUB_WORKSPACE/Team09/Tests09/out.xml   
+      
+      - name: setup bs4
+        run: |
+          pip install beautifulsoup4
+          pip install lxml
+        
+      - name: check out.xml for errors
+        shell: bash
+        run: |
+          cd Team09/Tests09
+          ls
+          python xmlParser.py
+                
+            
+  checkstyle:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+      - name: Install cpplint
+        run: pip install cpplint
+      - name: Run Script
+        run: |
+          cpplint --recursive --exclude=Team09/Code09/lib/catch.hpp --exclude=Team09\Code09\src\autotester\src\TestWrapper.h --exclude=Team09\Code09\src\autotester\src\AbstractWrapper.h --exclude=Team09/Code09/src/unit_testing --exclude=Team09/Code09/src/integration_testing --exclude=Team09/Code09/src/autotester_gui --filter=-legal/copyright,-whitespace/tab,-build/header_guard,-whitespace/line_length,-whitespace/indent,-readability/todo,-runtime/references,-whitespace/newline,-readability/braces .
+          
+# filtered checkstyle errors are mainly those that goes against CLion defaults:
+# 1. whitespace/tab 		- Some compilers default to tabs instead of 4 whitespaces on tab key press
+# 2. build/header_guard	- #pragma once is used instead of header guards
+# 3. whitespace/line_length	- CLion default is 120 line 'limit'
+# 4. whitespace/indent	- VS and CLion's public/protected/private access modifiers default to the same nesting level as the class it belongs to
+# 5. readability/todo		- Unnecessary for the purpose of this project
+# 6. runtime/references	- Differentiation between (const) references and pointers is relatively unnecessary for the purpose of this project
+# 7. whitespace/newline,readability/braces	 - VS default styling does not follow this style

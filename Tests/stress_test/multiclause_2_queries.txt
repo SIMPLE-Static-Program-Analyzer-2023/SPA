@@ -1,0 +1,15 @@
+1 - long query 1
+stmt s, s2; while w; if i; assign a, a2; variable v, v2; print pr; read rd;
+Select <s, v2> such that Parent*(i, s) and Parent(w, s) and Parent(s,s2) and Uses(s2, v) pattern a(v2, _"var15"_) such that Uses(pr, v2) and Modifies(rd, v2) and Next*(200, pr) and Next*(200, rd) and Uses(a, v2) and Affects(a2, a)
+100 var1, 295 var1, 41 var1
+5000
+2 - long query 2
+assign a1, a2, a3; if i, i2; variable v,v2,v3,v4; while w;
+Select <v4, i2> such that Affects(21, a1) and Uses(a1, v) pattern a2(v, _) such that Next*(350, i2) and Parent(i, a2) and Affects(a2, a3) and Uses(a2, v3) and Uses(w, v3) and Uses(w, v4) and Uses(i2, "var37")
+var0 354,var0 356,var0 358,var0 389,var1 354,var1 356,var1 358,var1 389,var10 354,var10 356,var10 358,var10 389,var11 354,var11 356,var11 358,var11 389,var12 354,var12 356,var12 358,var12 389,var13 354,var13 356,var13 358,var13 389,var14 354,var14 356,var14 358,var14 389,var15 354,var15 356,var15 358,var15 389,var16 354,var16 356,var16 358,var16 389,var17 354,var17 356,var17 358,var17 389,var18 354,var18 356,var18 358,var18 389,var19 354,var19 356,var19 358,var19 389,var2 354,var2 356,var2 358,var2 389,var20 354,var20 356,var20 358,var20 389,var21 354,var21 356,var21 358,var21 389,var22 354,var22 356,var22 358,var22 389,var23 354,var23 356,var23 358,var23 389,var24 354,var24 356,var24 358,var24 389,var25 354,var25 356,var25 358,var25 389,var26 354,var26 356,var26 358,var26 389,var27 354,var27 356,var27 358,var27 389,var28 354,var28 356,var28 358,var28 389,var29 354,var29 356,var29 358,var29 389,var3 354,var3 356,var3 358,var3 389,var30 354,var30 356,var30 358,var30 389,var31 354,var31 356,var31 358,var31 389,var32 354,var32 356,var32 358,var32 389,var33 354,var33 356,var33 358,var33 389,var34 354,var34 356,var34 358,var34 389,var35 354,var35 356,var35 358,var35 389,var36 354,var36 356,var36 358,var36 389,var37 354,var37 356,var37 358,var37 389,var38 354,var38 356,var38 358,var38 389,var39 354,var39 356,var39 358,var39 389,var4 354,var4 356,var4 358,var4 389,var40 354,var40 356,var40 358,var40 389,var5 354,var5 356,var5 358,var5 389,var6 354,var6 356,var6 358,var6 389,var7 354,var7 356,var7 358,var7 389,var8 354,var8 356,var8 358,var8 389,var9 354,var9 356,var9 358,var9 389,x 354,x 356,x 358,x 389
+5000
+3 - long query 3
+variable v, v2; assign a; stmt s; read r; if i;
+Select a pattern a(_, _"var37"_) such that Uses(a, v) and Modifies(s, v) and Uses(s, v) and Parent(s, r) and Parent(s, i)
+22,265,285
+5000

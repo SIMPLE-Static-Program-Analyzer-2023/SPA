@@ -1,0 +1,290 @@
+1 - Next Control Flow
+
+Select BOOLEAN such that Next(8, 10)
+TRUE
+5000
+2 - Next Control Flow
+
+Select BOOLEAN such that Next(9, 10)
+TRUE
+5000
+3 - Next Control Flow
+
+Select BOOLEAN such that Next(7, 10)
+FALSE
+5000
+4 - Next Control Flow
+
+Select BOOLEAN such that Next(8, 11)
+FALSE
+5000
+5 - Next Control Flow
+
+Select BOOLEAN such that Next(9, 11)
+FALSE
+5000
+6 - Next Control Flow
+
+Select BOOLEAN such that Next(7, 11)
+FALSE
+5000
+7 - Next Control Flow
+
+Select BOOLEAN such that Next(11, 10)
+TRUE
+5000
+8 - Next Control Flow
+
+Select BOOLEAN such that Next(10, 11)
+TRUE
+5000
+9 - Next Control Flow
+
+Select BOOLEAN such that Next(10, 17)
+TRUE
+5000
+10 - Next Control Flow
+
+Select BOOLEAN such that Next(15, 17)
+TRUE
+5000
+11 - Next Control Flow
+
+Select BOOLEAN such that Next(11, 17)
+FALSE
+5000
+12 - Next Control Flow
+
+Select BOOLEAN such that Next(16, 17)
+FALSE
+5000
+13 - Next Control Flow
+
+Select BOOLEAN such that Next(8, 17)
+FALSE
+5000
+14 - Next Control Flow
+
+Select BOOLEAN such that Next(9, 17)
+FALSE
+5000
+15 - Next Control Flow
+
+Select BOOLEAN such that Next(13, 17)
+FALSE
+5000
+16 - Next Control Flow
+
+Select BOOLEAN such that Next(14, 17)
+FALSE
+5000
+17 - Next Control Flow
+
+Select BOOLEAN such that Next(11, 18)
+FALSE
+5000
+18 - Next Control Flow
+
+Select BOOLEAN such that Next(16, 18)
+FALSE
+5000
+19 - Next Control Flow
+
+Select BOOLEAN such that Next(8, 18)
+FALSE
+5000
+20 - Next Control Flow
+
+Select BOOLEAN such that Next(9, 18)
+FALSE
+5000
+21 - Next Control Flow
+
+Select BOOLEAN such that Next(13, 18)
+FALSE
+5000
+22 - Next Control Flow
+
+Select BOOLEAN such that Next(14, 18)
+FALSE
+5000
+23 - Next Control Flow
+
+Select BOOLEAN such that Next(21, 23)
+TRUE
+5000
+24 - Next Control Flow
+
+Select BOOLEAN such that Next(22, 23)
+TRUE
+5000
+25 - Next Control Flow
+
+Select BOOLEAN such that Next(20, 23)
+FALSE
+5000
+26 - Next Control Flow
+
+Select BOOLEAN such that Next(21, 24)
+FALSE
+5000
+27 - Next Control Flow
+
+Select BOOLEAN such that Next(22, 24)
+FALSE
+5000
+28 - Next Control Flow
+
+Select BOOLEAN such that Next(20, 24)
+FALSE
+5000
+29 - Next Control Flow
+
+Select BOOLEAN such that Next(23, 24)
+TRUE
+5000
+30 - Next Control Flow
+
+Select BOOLEAN such that Next(24, 23)
+TRUE
+5000
+31 - Next Control Flow
+
+Select BOOLEAN such that Next(23, 30)
+TRUE
+5000
+32 - Next Control Flow
+
+Select BOOLEAN such that Next(28, 30)
+TRUE
+5000
+33 - Next Control Flow
+
+Select BOOLEAN such that Next(24, 30)
+FALSE
+5000
+34 - Next Control Flow
+
+Select BOOLEAN such that Next(29, 30)
+FALSE
+5000
+35 - Next Control Flow
+
+Select BOOLEAN such that Next(21, 30)
+FALSE
+5000
+36 - Next Control Flow
+
+Select BOOLEAN such that Next(22, 30)
+FALSE
+5000
+37 - Next Control Flow
+
+Select BOOLEAN such that Next(26, 30)
+FALSE
+5000
+38 - Next Control Flow
+
+Select BOOLEAN such that Next(27, 30)
+FALSE
+5000
+39 - Next Control Flow
+
+Select BOOLEAN such that Next(24, 31)
+FALSE
+5000
+40 - Next Control Flow
+
+Select BOOLEAN such that Next(29, 31)
+FALSE
+5000
+41 - Next Control Flow
+
+Select BOOLEAN such that Next(21, 31)
+FALSE
+5000
+42 - Next Control Flow
+
+Select BOOLEAN such that Next(22, 31)
+FALSE
+5000
+43 - Next Control Flow
+
+Select BOOLEAN such that Next(26, 31)
+FALSE
+5000
+44 - Next Control Flow
+
+Select BOOLEAN such that Next(27, 31)
+FALSE
+5000
+45 - Next Control Flow
+stmt s;
+Select s such that Next(s, 32)
+17, 30, 33
+5000
+46 - Next Control Flow
+stmt s;
+Select s such that Next(s, 37)
+36
+5000
+47 - Next Control Flow
+stmt s;
+Select s such that Next(s, 39)
+37, 38, 40
+5000
+48 - Next Control Flow
+stmt s;
+Select s such that Next(s, 44)
+42, 43, 45
+5000
+49 - Next Control Flow
+stmt s;
+Select s such that Next(s, 46)
+39, 44, 47
+5000
+50 - Next Control Flow
+stmt s;
+Select s such that Next(s, 52)
+50, 51, 53
+5000
+51 - Next Control Flow
+stmt s;
+Select s such that Next(s, 57)
+55, 56, 58
+5000
+52 - Next Control Flow
+stmt s;
+Select s such that Next(s, 59)
+52, 57, 60
+5000
+53 - Next Control Flow
+stmt s;
+Select s such that Next(s, 61)
+46, 59, 62
+5000
+54 - Next Control Flow
+stmt s;
+Select s such that Next(s, 63)
+32, 61, 64
+5000
+55 - Next Control Flow
+stmt s;
+Select s such that Next(s, 111)
+110
+5000
+56 - Next* Control Flow
+stmt s;
+Select s such that Next*(s, 2)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113
+5000
+57 - Next* Control Flow
+stmt s;
+Select s such that Next*(s, 38)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113
+5000
+58 - Test that 114 is not in while loop
+stmt s;
+Select s such that Follows*(s, 114)
+1, 2
+5000

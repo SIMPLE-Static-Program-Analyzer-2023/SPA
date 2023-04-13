@@ -1,0 +1,21 @@
+procedure proc3dure {
+    varB = a + varB1;
+    var = 2;
+    while (Z123 > 0) {
+        call procedure2;
+    }
+    b=2;
+    if (print < 10) then{
+        print = print + 9;
+        varB = helloWorld / varB;
+    } else {
+        helloWorld = 57660785;
+    }
+    Z123 = print + print * varB + var;
+    print varB1;
+    read varB2;
+}
+
+procedure procedure2{
+    var = var * 3 + 14 / varB1;
+}

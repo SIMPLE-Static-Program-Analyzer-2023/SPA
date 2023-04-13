@@ -1,0 +1,583 @@
+procedure NextControlFlow {
+  y = x;
+  while ((!(a != b)) && (((((!(a < b)) && (!(a >= c))) || (ba24 != a)) && (a != b * ((b)))) || (((123 + aDD)) >= (((((2 % B25)))) / b23B213Abb)))) {
+    if (x == 2) then {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;  
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        }
+        while (x == 2) {
+          y = x;
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        } 
+        while (x == 2) {
+          y = x;
+        }
+      }
+      while (x == 2) {
+        y = x;
+      }
+    } else {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        }
+        while (x == 2) {
+          y = x;
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          } else {
+            if (x == 2) then {
+              y = x;
+            } else {
+              y = x;
+            }
+            while (x == 2) {
+              y = x;
+            }
+          }
+          while (x == 2) {
+            y = x;
+          }
+        } else {
+          y = x;
+        }
+        while (x == 2) {
+          y = x;
+        }
+      }
+      while (x == 2) {
+        y = x;
+      }
+    }
+  }
+  z = y;
+}
+
+procedure BasicAffects {
+
+  a = 2;
+  b = a;
+  
+  c = 2;
+  c = c;
+  d = c;
+  
+  c = 2;
+  C = c;
+  d = c;
+  
+  e = 2;
+  call BasicAffectsIf;
+  f = e;
+  
+  e = 2;
+  call BasicAffectsWhile;
+  f = e;
+  
+  g = 2;
+  call BasicAffectsNone;
+  h = g;
+  
+  i = 2;
+  read i;
+  j = i;
+  
+  i = 2;
+  read I;
+  j = i;
+  
+  k = 2;
+  while (x == 2) {
+    k = 2;
+  }
+  l = k;
+  
+  k = 2;
+  while (x == 2) {
+    k = 2;
+    k = 2;
+  }
+  l = k;
+  
+  m = 2;
+  while (x == 2) {
+    M = m;
+  }
+  n = m;
+  
+  o = 2;
+  if (x == 2) then {
+    o = 2;
+  } else {
+    o = 2;
+  }
+  p = o;
+  
+  o = 2;
+  if (x == 2) then {
+    NONE = 2;
+  } else {
+    o = 2;
+  }
+  p = o;
+  
+  o = 2;
+  if (x == 2) then {
+    o = 2;
+  } else {
+    NONE = 2; 
+  }
+  p = o;
+
+  o = 2;
+  if (x == 2) then {
+    NONE = 2;
+  } else {
+    NONE = 2;
+  }
+  p = o;
+  
+  whileA = 1;
+  while (x == 2) {
+    whileB = whileA;
+  }
+  
+  whileA = 1;
+  while (x == 2) {
+    x = 2;
+    whileB = whileA;
+  }
+  
+  whileA = 1;
+  while (x == 2) {
+    whileA = 1;
+    whileB = whileA;
+  }
+  
+  whileA = 1;
+  while (x == 2) {
+    whileB = whileA;
+    whileA = 1;
+  }
+  
+  while (x == 2) {
+    whileB = whileA;
+    whileA = 2;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    whileB = whileA;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    whileB = whileA;
+    whileA = 2;
+  }
+
+  while (x == 2) {
+    whileA = 2;
+    whileA = 2;
+    whileB = whileA;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  while (x == 2) {
+    whileA = 2;
+    x = 2;
+  }
+  whileB = whileA;
+
+  while (x == 2) {
+    whileA = 2;
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  while (x == 2) {
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileB = whileA;
+    }
+  }
+  
+  while (x == 2) {
+    if (x == 2) then {
+      whileB = whileA;
+    } else {
+      whileA = 2;
+    }
+  }
+  
+  whileA = 2;
+  while (x == 2) {
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileB = whileA;
+    }
+  }
+  
+  whileA = 2;
+  while (x == 2) {
+    if (x == 2) then {
+      whileB = whileA;
+    } else {
+      whileA = 2;
+    }
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+    whileB = whileA;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      x = 2;
+    }
+    whileB = whileA;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    if (x == 2) then {
+      x = 2;
+    } else {
+      whileA = 2;
+    }
+    whileB = whileA;
+  }
+  
+  while (x == 2) {
+    whileB = whileA;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+  }
+  
+  while (x == 2) {
+    whileB = whileA;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+    whileA = 2;
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    whileB = whileA;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+  }
+  
+  while (x == 2) {
+    whileA = 2;
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+  }
+  whileB = whileA;
+  
+  while (x == 2) {
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  while (x == 2) {
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  while (x == 2) {
+    if (x == 2) then {
+      whileA = 2;
+    } else {
+      whileA = 2;
+    }
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  if (x == 2) then {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+  } else {
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  if (x == 2) then {
+    whileA = 2;
+  } else {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  if (x == 2) then {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+  } else {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  if (x == 2) then {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+    whileA = 2;
+  } else {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+    whileA = 2;
+  }
+  whileB = whileA;
+  
+  whileA = 2;
+  if (x == 2) then {
+    while (x == 2) {
+      whileA = 2;
+    }
+    whileB = whileA;
+  } else {
+    whileA = 2;
+    while (x == 2) {
+      whileA = 2;
+    }
+    whileB = whileA;
+  }
+
+  while (x == 2) {
+    z = z;
+  }
+  
+  while (x == 2) {
+    z = z;
+    z = z;
+  }
+  
+  while (x == 2) {
+    z = z;
+    z = z;
+    z = z;
+  }
+  
+}
+
+procedure BasicAffectsIf {
+  if (x == 2) then {
+    e = a + 1;
+  } else {
+    a = b;
+  }
+}
+
+procedure BasicAffectsWhile {
+  while (x == 2) {
+    e = a + 1;
+  }
+}
+
+procedure BasicAffectsNone {
+  NONE = 2;
+}
+
+

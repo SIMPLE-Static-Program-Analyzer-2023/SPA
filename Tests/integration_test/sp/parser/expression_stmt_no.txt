@@ -1,0 +1,12 @@
+procedure bar {
+    x = 3 + 4 * 6 - 6 / 2;
+    while (x / y % z + (a + b) * c - d > 3) {
+        qps = k - l % m * (n + o) + p;
+    }
+    if (!(f % g + (h - i) / j * k < d / e % f + (g * h - i) - j)) then {
+        x = f % g + (h - i) / j * k + you + me;
+    } else {
+        hello = world + you;
+    }
+
+}

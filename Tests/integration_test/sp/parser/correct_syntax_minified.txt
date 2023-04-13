@@ -1,0 +1,1 @@
+procedure foo3 {read x;read y;x = 3;x = y;print z;}

@@ -1,0 +1,23 @@
+procedure bar {
+    rootNode = proc2;
+    proc2 = stmt1;
+    x = 3;
+    y = 4;
+    if (x <= 4 ) then {
+        if ( y >= 69) then {
+            if (z < 5) then {
+                if (cop == q) then {
+                    kobe = 24;
+                } else {
+                    b = 123;
+                }
+            } else {
+                happy = 99;
+            }
+        } else {
+            g = 3;
+        }
+    } else {
+        q = asd;
+    }
+}

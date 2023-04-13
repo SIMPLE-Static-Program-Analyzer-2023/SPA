@@ -1,0 +1,40 @@
+procedure proc3dure {
+    a = 0;
+    varB1=1;
+    varB = a + varB1;
+    Z123=2;
+    read read;
+    read = (read + varB) / 5;
+    print = read;
+    print print;
+    while(Z123>0) {
+        Z123=Z123-varB1;
+        if(print<10) then {
+            print=print+9;
+            Z123 = print + print * varB + varB1;
+        } else {
+            helloWorld = 57660785;
+            while(Z123 < 100) {
+                print varB1;	
+                read varB2;
+                varB1 = varB1*varB2;
+                while((varB2 <read) || (Z123>10)) {
+                    varB1=varB1*3 + varB2;
+                }
+                varB1=varB1/varB2;
+            }
+            read = helloWorld/helloWorld;
+        }
+        var = 3;
+        var=var*var;
+    }
+    print read;
+    call b;
+}
+
+procedure b {
+    call c;
+}
+
+procedure c {
+}

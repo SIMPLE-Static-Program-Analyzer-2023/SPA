@@ -1,0 +1,23 @@
+procedure proc1 {
+    var1 = 123;
+    var2 = var1 + 2;
+    if(x>0) then {
+        var5 = var2+var1;
+        var1 = var1*15;
+    } else {
+        call proc2;
+    }
+    var6 = var2/5;
+    while(var5 !=0){
+        test = var5/var2;
+        var6 = var6*99;
+    }
+    test3 = var6;
+    test4 = var1;
+}
+
+procedure proc2 {
+    var3 = 5;
+    var2 = var3 * 5;
+    var1 = var3;
+}

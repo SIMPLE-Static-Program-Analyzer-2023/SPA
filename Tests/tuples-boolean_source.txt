@@ -1,0 +1,13 @@
+procedure pr0c3dure {
+    x = 1;
+    y = 1;
+    if (x < 10) then {
+	y = 1;
+    } else {
+        y = y + 1;
+    }
+    while (y > 10) {
+	x = x - 1;
+    }
+    read x;
+}

@@ -1,0 +1,20 @@
+1 -
+if ifs; while w;
+Select ifs pattern ifs(_,_,_)
+4
+5000
+2 -
+if ifs; while w;
+Select w pattern w(_,_)
+5
+5000
+3 -
+if ifs; while w; variable v;
+Select <ifs, v> pattern ifs(v,_,_)
+4 x
+5000
+4 -
+if ifs; while w; variable v;
+Select <w, v> pattern w(v,_)
+5 x, 5 y
+5000

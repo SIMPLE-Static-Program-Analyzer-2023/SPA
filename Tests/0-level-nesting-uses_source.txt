@@ -1,0 +1,10 @@
+procedure pr0c3Dure {
+    a = 1;
+    print a;
+    read ab;
+    ab = a + 2;
+    print ab;
+    a = a - a;
+    ab = ab * ab;
+    abc = ab / a % ab;
+}

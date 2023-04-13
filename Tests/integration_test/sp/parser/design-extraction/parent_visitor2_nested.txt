@@ -1,0 +1,18 @@
+procedure bar {
+    if ( c < 3 ) then {
+        while (!(po > 123)) {
+            d = 4 + 5 * 6;
+        }
+    } else {
+        while (!(po > 123)) {
+            x = 3 / 2;
+        }
+    }
+    while ((f<9)  && (!(g>10))) {
+        if (x > 3) then {
+            y = 33;
+        } else {
+            u = 127676;
+        }
+    }
+}

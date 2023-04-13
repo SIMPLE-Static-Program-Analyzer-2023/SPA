@@ -1,0 +1,678 @@
+1 -
+stmt s;
+Select s
+1, 2, 3, 4, 5, 6, 7, 8
+5000
+2 -
+read r;
+Select r
+3
+5000
+3 -
+print pr;
+Select pr
+2, 5
+5000
+4 -
+while w;
+Select w
+none
+5000
+5 -
+if ifs;
+Select ifs
+none
+5000
+6 -
+assign a;
+Select a
+1, 4, 6, 7, 8
+5000
+7 -
+variable v;
+Select v
+a, ab, abc
+5000
+8 -
+constant c;
+Select c
+1, 2
+5000
+9 - Invalid Uses LHS (variable)
+stmt s; variable v;
+Select s such that Uses(v, _)
+SemanticError
+5000
+10 - Invalid Uses LHS (read)
+stmt s; read rd;
+Select s such that Uses(rd, _)
+SemanticError
+5000
+11 - Invalid Uses LHS (constant)
+stmt s; constant const;
+Select s such that Uses(const, _)
+SemanticError
+5000
+12 - Invalid Uses LHS (wildcard)
+stmt s; 
+Select s such that Uses(_, _)
+SemanticError
+5000
+13 - Invalid Uses RHS (INT)
+stmt s;
+Select s such that Uses(s, 2)
+SemanticError
+5000
+14 - Invalid Uses RHS (read)
+stmt s; read rd;
+Select s such that Uses(s, rd)
+SemanticError
+5000
+15 - Invalid Uses RHS (print)
+stmt s; print pn;
+Select s such that Uses(s, pn)
+SemanticError
+5000
+16 - Invalid Uses RHS (assign)
+stmt s; assign a;
+Select s such that Uses(s, a)
+SemanticError
+5000
+17 - Invalid Uses RHS (while)
+stmt s; while w;
+Select s such that Uses(s, w)
+SemanticError
+5000
+18 - Invalid Uses RHS (if)
+stmt s; if ifs;
+Select s such that Uses(s, ifs)
+SemanticError
+5000
+19 - Invalid Uses RHS (constant syn)
+stmt s; constant const;
+Select s such that Uses(s, const)
+SemanticError
+5000
+20 - Invalid Uses RHS (statement)
+stmt s1, s2;
+Select s such that Uses(s1, s2)
+SemanticError
+5000
+21 - Invalid Modifies LHS (variable)
+stmt s; variable v;
+Select s such that Modifies(v, _)
+SemanticError
+5000
+23 - Invalid Modifies LHS (constant syn)
+stmt s; constant const;
+Select s such that Modifies(const, _)
+SemanticError
+5000
+24 - Invalid Modifies LHS (wildcard)
+stmt s; 
+Select s such that Modifies(_, _)
+SemanticError
+5000
+25 - Invalid Modifies RHS (INT)
+stmt s;
+Select s such that Modifies(s, 2)
+SemanticError
+5000
+26 - Invalid Modifies RHS (read)
+stmt s; read rd;
+Select s such that Modifies(s, rd)
+SemanticError
+5000
+27 - Invalid Modifies RHS (print)
+stmt s; print pn;
+Select s such that Modifies(s, pn)
+SemanticError
+5000
+28 - Invalid Modifies RHS (assign)
+stmt s; assign a;
+Select s such that Modifies(s, a)
+SemanticError
+5000
+29 - Invalid Modifies RHS (while)
+stmt s; while w;
+Select s such that Modifies(s, w)
+SemanticError
+5000
+30 - Invalid Modifies RHS (if)
+stmt s; if ifs;
+Select s such that Modifies(s, ifs)
+SemanticError
+5000
+31 - Invalid Modifies RHS (constant syn)
+stmt s; constant const;
+Select s such that Modifies(s, const)
+SemanticError
+5000
+32 - Invalid Modifies RHS (statement)
+stmt s1, s2;
+Select s such that Modifies(s1, s2)
+SemanticError
+5000
+33 - Invalid Follows LHS (variable)
+stmt s; variable v;
+Select s such that Follows(v, s)
+SemanticError
+5000
+34 - Invalid Follows LHS (procedure)
+stmt s; procedure p;
+Select s such that Follows(p, s)
+SemanticError
+5000
+35 - Invalid Follows LHS (IDENT)
+stmt s;
+Select s such that Follows("x", s)
+SemanticError
+5000
+36 - Invalid Follows RHS (variable)
+stmt s; variable v;
+Select s such that Follows(s, v)
+SemanticError
+5000
+37 - Invalid Follows RHS (procedure)
+stmt s; procedure p;
+Select s such that Follows(s, p)
+SemanticError
+5000
+38 - Invalid Follows RHS (IDENT)
+stmt s;
+Select s such that Follows(s, "x")
+SemanticError
+5000
+39 - Invalid Follows* LHS (variable)
+stmt s; variable v;
+Select s such that Follows*(v, s)
+SemanticError
+5000
+40 - Invalid Follows* LHS (procedure)
+stmt s; procedure p;
+Select s such that Follows*(p, s)
+SemanticError
+5000
+41 - Invalid Follows* LHS (IDENT)
+stmt s;
+Select s such that Follows*("x", s)
+SemanticError
+5000
+42 - Invalid Follows* RHS (variable)
+stmt s; variable v;
+Select s such that Follows*(s, v)
+SemanticError
+5000
+43 - Invalid Follows* RHS (procedure)
+stmt s; procedure p;
+Select s such that Follows*(s, p)
+SemanticError
+5000
+44 - Invalid Follows* RHS (IDENT)
+stmt s;
+Select s such that Follows*(s, "x")
+SemanticError
+5000
+45 - Invalid Parent LHS (variable)
+stmt s; variable v;
+Select s such that Parent(v, s)
+SemanticError
+5000
+46 - Invalid Parent LHS (procedure)
+stmt s; procedure p;
+Select s such that Parent(p, s)
+SemanticError
+5000
+47 - Invalid Parent LHS (IDENT)
+stmt s;
+Select s such that Parent("x", s)
+SemanticError
+5000
+48 - Invalid Parent RHS (variable)
+stmt s; variable v;
+Select s such that Parent(s, v)
+SemanticError
+5000
+49 - Invalid Parent RHS (procedure)
+stmt s; procedure p;
+Select s such that Parent(s, p)
+SemanticError
+5000
+50 - Invalid Parent RHS (IDENT)
+stmt s;
+Select s such that Parent(s, "x")
+SemanticError
+5000
+51 - Invalid Parent* LHS (variable)
+stmt s; variable v;
+Select s such that Parent*(v, s)
+SemanticError
+5000
+52 - Invalid Parent* LHS (procedure)
+stmt s; procedure p;
+Select s such that Parent*(p, s)
+SemanticError
+5000
+53 - Invalid Parent* LHS (IDENT)
+stmt s;
+Select s such that Parent*("x", s)
+SemanticError
+5000
+54 - Invalid Parent* RHS (variable)
+stmt s; variable v;
+Select s such that Parent*(s, v)
+SemanticError
+5000
+55 - Invalid Parent* RHS (procedure)
+stmt s; procedure p;
+Select s such that Parent*(s, p)
+SemanticError
+5000
+56 - Invalid Parent* RHS (IDENT)
+stmt s;
+Select s such that Parent*(s, "x")
+SemanticError
+5000
+57 - Invalid assign Pattern LHS (const syn)
+assign a; constant c;
+Select a such that Pattern a (c, _)
+SemanticError
+5000
+58 - Invalid assign Pattern LHS (stmt)
+assign a; stmt s;
+Select a such that Pattern a (s, _)
+SemanticError
+5000
+59 - Invalid assign Pattern LHS (read)
+assign a; read rd;
+Select a such that Pattern a (rd, _)
+SemanticError
+5000
+60 - Invalid assign Pattern LHS (print)
+assign a; print pr;
+Select a such that Pattern a (pr, _)
+SemanticError
+5000
+61 - Invalid assign Pattern LHS (assign)
+assign a;
+Select a such that Pattern a (a, _)
+SemanticError
+5000
+62 - Invalid assign Pattern LHS (call)
+assign a; call cl;
+Select a such that Pattern a (cl, _)
+SemanticError
+5000
+63 - Invalid assign Pattern LHS (while)
+assign a; while w;
+Select a such that Pattern a (w, _)
+SemanticError
+5000
+64 - Invalid assign Pattern LHS (if)
+assign a; if ifs;
+Select a such that Pattern a (ifs, _)
+SemanticError
+5000
+65 - Invalid assign Pattern LHS (procedure)
+assign a; procedure p;
+Select a such that Pattern a (p, _)
+SemanticError
+5000
+66 - Invalid assign Pattern LHS (INT)
+assign a;
+Select a such that Pattern a (1, _)
+SemanticError
+5000
+67 - Invalid assign Pattern RHS (stmt)
+assign a; stmt s;
+Select a such that Pattern a (_, s)
+SemanticError
+5000
+68 - Invalid assign Pattern RHS (read)
+assign a; read rd;
+Select a such that Pattern a (_, rd)
+SemanticError
+5000
+69 - Invalid assign Pattern RHS (print)
+assign a; print pr;
+Select a such that Pattern a (_, pr)
+SemanticError
+5000
+70 - Invalid assign Pattern RHS (assign)
+assign a;
+Select a such that Pattern a (_, a)
+SemanticError
+5000
+71 - Invalid assign Pattern RHS (call)
+assign a; call cl;
+Select a such that Pattern a (_, cl)
+SemanticError
+5000
+72 - Invalid assign Pattern RHS (while)
+assign a; while w;
+Select a such that Pattern a (_, w)
+SemanticError
+5000
+73 - Invalid assign Pattern RHS (if)
+assign a; if ifs;
+Select a such that Pattern a (_, ifs)
+SemanticError
+5000
+74 - Invalid assign Pattern RHS (variable)
+assign a; variable v;
+Select a such that Pattern a (_, v)
+SemanticError
+5000
+75 - Invalid assign Pattern RHS (procedure)
+assign a; procedure p;
+Select a such that Pattern a (_, p)
+SemanticError
+5000
+76 - Invalid assign Pattern RHS (constant syn)
+assign a; constant c;
+Select a such that Pattern a (_, c)
+SemanticError
+5000
+77 - Invalid assign Pattern RHS (INT)
+assign a;
+Select a such that Pattern a (_, 1)
+SemanticError
+5000
+
+78 - Invalid while Pattern LHS (const syn)
+while w; constant c;
+Select w such that Pattern w (c, _)
+SemanticError
+5000
+79 - Invalid while Pattern LHS (stmt)
+while w; stmt s;
+Select w such that Pattern w (s, _)
+SemanticError
+5000
+80 - Invalid while Pattern LHS (read)
+while w; read rd;
+Select w such that Pattern w (rd, _)
+SemanticError
+5000
+81 - Invalid while Pattern LHS (print)
+while w; print pr;
+Select w such that Pattern w (pr, _)
+SemanticError
+5000
+82 - Invalid while Pattern LHS (assign)
+while w;
+Select w such that Pattern w (a, _)
+SemanticError
+5000
+83 - Invalid while Pattern LHS (call)
+while w; call cl;
+Select w such that Pattern w (cl, _)
+SemanticError
+5000
+84 - Invalid while Pattern LHS (while)
+while w;
+Select w such that Pattern w (w, _)
+SemanticError
+5000
+85 - Invalid while Pattern LHS (if)
+while w; if ifs;
+Select w such that Pattern w (ifs, _)
+SemanticError
+5000
+86 - Invalid while Pattern LHS (procedure)
+while w; procedure p;
+Select w such that Pattern w (p, _)
+SemanticError
+5000
+87 - Invalid while Pattern LHS (INT)
+while w;
+Select w such that Pattern w (1, _)
+SemanticError
+5000
+88 - Invalid while Pattern RHS (stmt)
+while w; stmt s;
+Select w such that Pattern w (_, s)
+SemanticError
+5000
+89 - Invalid while Pattern RHS (read)
+while w; read rd;
+Select w such that Pattern w (_, rd)
+SemanticError
+5000
+90 - Invalid while Pattern RHS (print)
+while w; print pr;
+Select w such that Pattern w (_, pr)
+SemanticError
+5000
+91 - Invalid while Pattern RHS (assign)
+while w;
+Select w such that Pattern w (_, a)
+SemanticError
+5000
+92 - Invalid while Pattern RHS (call)
+while w; call cl;
+Select w such that Pattern w (_, cl)
+SemanticError
+5000
+93 - Invalid while Pattern RHS (while)
+while w;
+Select w such that Pattern w (_, w)
+SemanticError
+5000
+94 - Invalid while Pattern RHS (if)
+while w; if ifs;
+Select w such that Pattern w (_, ifs)
+SemanticError
+5000
+95 - Invalid while Pattern RHS (variable)
+while w; variable v;
+Select w such that Pattern w (_, v)
+SemanticError
+5000
+96 - Invalid while Pattern RHS (procedure)
+while w; procedure p;
+Select w such that Pattern w (_, p)
+SemanticError
+5000
+97 - Invalid while Pattern RHS (constant syn)
+while w; constant c;
+Select w such that Pattern w (_, c)
+SemanticError
+5000
+98 - Invalid while Pattern RHS (INT)
+while w;
+Select w such that Pattern w (_, 1)
+SemanticError
+5000
+99 - Invalid while Pattern RHS (expression)
+while w;
+Select w such that Pattern w (_, "x")
+SyntaxError
+5000
+100 - Invalid while Pattern RHS (partial match expression)
+while w;
+Select w such that Pattern w (_, _"x"_)
+SyntaxError
+5000
+
+101 - Invalid if Pattern LHS (const syn)
+if ifs; constant c;
+Select ifs such that Pattern ifs (c, _, _)
+SemanticError
+5000
+102 - Invalid if Pattern LHS (stmt)
+if ifs; stmt s;
+Select ifs such that Pattern ifs (s, _, _)
+SemanticError
+5000
+103 - Invalid if Pattern LHS (read)
+if ifs; read rd;
+Select ifs such that Pattern ifs (rd, _, _)
+SemanticError
+5000
+104 - Invalid if Pattern LHS (print)
+if ifs; print pr;
+Select ifs such that Pattern ifs (pr, _, _)
+SemanticError
+5000
+105 - Invalid if Pattern LHS (assign)
+if ifs;
+Select ifs such that Pattern ifs (a, _, _)
+SemanticError
+5000
+106 - Invalid if Pattern LHS (call)
+if ifs; call cl;
+Select ifs such that Pattern ifs (cl, _, _)
+SemanticError
+5000
+107 - Invalid if Pattern LHS (while)
+if ifs; while w;
+Select ifs such that Pattern ifs (w, _, _)
+SemanticError
+5000
+108 - Invalid if Pattern LHS (if)
+if ifs;
+Select ifs such that Pattern ifs (ifs, _, _)
+SemanticError
+5000
+109 - Invalid if Pattern LHS (procedure)
+if ifs; procedure p;
+Select ifs such that Pattern ifs (p, _, _)
+SemanticError
+5000
+110 - Invalid if Pattern LHS (INT)
+if ifs;
+Select ifs such that Pattern ifs (1, _, _)
+SemanticError
+5000
+111 - Invalid if Pattern first RHS (stmt)
+if ifs; stmt s;
+Select ifs such that Pattern ifs (_, _, s)
+SemanticError
+5000
+112 - Invalid if Pattern first RHS (read)
+if ifs; read rd;
+Select ifs such that Pattern ifs (_, _, rd)
+SemanticError
+5000
+113 - Invalid if Pattern first RHS (print)
+if ifs; print pr;
+Select ifs such that Pattern ifs (_, _, pr)
+SemanticError
+5000
+114 - Invalid if Pattern first RHS (assign)
+if ifs;
+Select ifs such that Pattern ifs (_, _, a)
+SemanticError
+5000
+115 - Invalid if Pattern first RHS (call)
+if ifs; call cl;
+Select ifs such that Pattern ifs (_, _, cl)
+SemanticError
+5000
+116 - Invalid if Pattern first RHS (while)
+if ifs;
+Select ifs such that Pattern ifs (_, _, w)
+SemanticError
+5000
+117 - Invalid if Pattern first RHS (if)
+if ifs; if ifs;
+Select ifs such that Pattern ifs (_, _, ifs)
+SemanticError
+5000
+118 - Invalid if Pattern first RHS (variable)
+if ifs; variable v;
+Select ifs such that Pattern ifs (_, _, v)
+SemanticError
+5000
+119 - Invalid if Pattern first RHS (procedure)
+if ifs; procedure p;
+Select ifs such that Pattern ifs (_, _, p)
+SemanticError
+5000
+120 - Invalid if Pattern first RHS (constant syn)
+if ifs; constant c;
+Select ifs such that Pattern ifs (_, _, c)
+SemanticError
+5000
+121 - Invalid if Pattern first RHS (INT)
+if ifs;
+Select ifs such that Pattern ifs (_, _, 1)
+SemanticError
+5000
+122 - Invalid if Pattern first RHS (expression)
+if ifs;
+Select ifs such that Pattern ifs (_, _, "x")
+SyntaxError
+5000
+123 - Invalid if Pattern first RHS (partial match expression)
+if ifs;
+Select ifs such that Pattern ifs (_, _, _"x"_)
+SyntaxError
+5000
+
+124 - Invalid if Pattern second RHS (stmt)
+if ifs; stmt s;
+Select ifs such that Pattern ifs (_, s, _)
+SemanticError
+5000
+125 - Invalid if Pattern second RHS (read)
+if ifs; read rd;
+Select ifs such that Pattern ifs (_, rd, _)
+SemanticError
+5000
+126 - Invalid if Pattern second RHS (print)
+if ifs; print pr;
+Select ifs such that Pattern ifs (_, pr, _)
+SemanticError
+5000
+127 - Invalid if Pattern second RHS (assign)
+if ifs;
+Select ifs such that Pattern ifs (_, a, _)
+SemanticError
+5000
+128 - Invalid if Pattern second RHS (call)
+if ifs; call cl;
+Select ifs such that Pattern ifs (_, cl, _)
+SemanticError
+5000
+129 - Invalid if Pattern second RHS (while)
+if ifs;
+Select ifs such that Pattern ifs (_, w, _)
+SemanticError
+5000
+130 - Invalid if Pattern second RHS (if)
+if ifs; if ifs;
+Select ifs such that Pattern ifs (_, ifs, _)
+SemanticError
+5000
+131 - Invalid if Pattern second RHS (variable)
+if ifs; variable v;
+Select ifs such that Pattern ifs (_, v, _)
+SemanticError
+5000
+132 - Invalid if Pattern second RHS (procedure)
+if ifs; procedure p;
+Select ifs such that Pattern ifs (_, p, _)
+SemanticError
+5000
+133 - Invalid if Pattern second RHS (constant syn)
+if ifs; constant c;
+Select ifs such that Pattern ifs (_, c, _)
+SemanticError
+5000
+134 - Invalid if Pattern second RHS (INT)
+if ifs;
+Select ifs such that Pattern ifs (_, 1, _)
+SemanticError
+5000
+135 - Invalid if Pattern second RHS (expression)
+if ifs;
+Select ifs such that Pattern ifs (_, "x", _)
+SyntaxError
+5000
+136 - Invalid if Pattern second RHS (partial match expression)
+if ifs;
+Select ifs such that Pattern ifs (_, _"x"_, _)
+SyntaxError
+5000

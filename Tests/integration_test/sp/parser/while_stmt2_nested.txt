@@ -1,0 +1,24 @@
+procedure bar {
+    x = 3;
+    y = 4;
+    if (x < 4 ) then {
+        v = 4;
+    } else {
+        q = asd;
+    }
+    while ((x<y)  && (!(y>99))) {
+        x = 4;
+        while (hello <= world) {
+            hello = p;
+            while (if > while) {
+                test = 3;
+            }
+              k = 3;
+        }
+        read asd;
+        a = b;
+        c = d;
+    }
+
+}
+

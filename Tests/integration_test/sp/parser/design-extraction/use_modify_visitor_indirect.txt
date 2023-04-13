@@ -1,0 +1,13 @@
+procedure A {
+    x = l + o;
+    call B;
+}
+
+procedure B {
+    y = m + p;
+    call C;
+}
+
+procedure C {
+    z = n / q;
+}

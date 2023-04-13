@@ -1,0 +1,18 @@
+procedure bar {
+    e = 7 / 8;
+    zc = dasd;
+    if ( c < 3 ) then {
+        d = 4 + 5 * 6;
+        read x;
+        print y;
+    } else {
+        e = 7 / 8;
+        zc = dasd;
+        vcx = asd;
+    }
+    vcx = asd;
+    while ((f<9)  && (!(g>10))) {
+        h = 11 % 12;
+    }
+}
+

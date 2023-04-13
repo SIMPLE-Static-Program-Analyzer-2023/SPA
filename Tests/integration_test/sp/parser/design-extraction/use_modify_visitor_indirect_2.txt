@@ -1,0 +1,22 @@
+procedure A {
+    while (n > q) {
+        call B;
+    }
+}
+
+procedure B {
+    y = m + p;
+    if ( m < p) then {
+        call C;
+    } else {
+        call D;
+    }
+}
+
+procedure C {
+    z = n / q;
+}
+
+procedure D {
+    hello = world;
+}

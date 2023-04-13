@@ -1,0 +1,19 @@
+procedure P4FxSlD {
+  if (((6+(var33))+(60%var28)>=(6)-(var15)/var14+75)&&(((var22)%17)/(var34)%(var20)<=(80%91)/(var9)%var18)) then {
+    read var25;
+    read var0;
+  } else {
+    var7 = (var23/(var14))-(16)/(34);
+    read var31;
+  }
+  if (!((var5*62)%(40)%(97)==((79)%(var13))%(var40+(var26)))) then {
+    print var35;
+    print var24;
+  } else {
+    var16 = var35-77-50%var26;
+    var31 = (var21)+(1)+(31)*(35);
+  }
+  var28 = asd + 123;
+  print var28;
+  zxc = var28 + 123 / 2;
+}

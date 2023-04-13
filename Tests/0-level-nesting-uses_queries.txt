@@ -1,0 +1,115 @@
+1 -
+stmt s;
+Select s
+1, 2, 3, 4, 5, 6, 7, 8
+5000
+2 -
+read r;
+Select r
+3
+5000
+3 -
+print pr;
+Select pr
+2, 5
+5000
+4 -
+while w;
+Select w
+none
+5000
+5 -
+if ifs;
+Select ifs
+none
+5000
+6 -
+assign a;
+Select a
+1, 4, 6, 7, 8
+5000
+7 -
+variable v;
+Select v
+a, ab, abc
+5000
+8 -
+constant c;
+Select c
+1, 2
+5000
+9 -
+procedure p;
+Select p
+pr0c3Dure
+5000
+10 - Uses(syn*,syn)
+stmt s; variable v;
+Select s such that Uses (s, v)
+2, 4, 5, 6, 7, 8
+5000
+11 - Uses(syn,syn*)
+stmt s; variable v;
+Select v such that Uses (s, v)
+a, ab
+5000
+12 - Uses(syn*,IDENT)
+stmt s;
+Select s such that Uses (s, "a")
+2, 4, 6, 8
+5000
+13 - Uses(syn*,IDENT)
+stmt s; variable v;
+Select v such that Uses (s, "a")
+a, ab, abc
+5000
+14 - Uses(syn*,_)
+stmt s;
+Select s such that Uses (s, _)
+2, 4, 5, 6, 7, 8
+5000
+15 - Uses(syn,_)
+stmt s; assign a;
+Select a such that Uses (s, _)
+1, 4, 6, 7, 8
+5000
+16 - Uses(INT,syn*)
+variable v;
+Select v such that Uses (8, v)
+a, ab
+5000
+17 - Uses(INT,syn)
+variable v; assign a;
+Select a such that Uses (8, v)
+1, 4, 6, 7, 8
+5000
+18 - Uses(INT,IDENT)
+stmt s;
+Select s such that Uses (8, "a")
+1, 2, 3, 4, 5, 6, 7, 8
+5000
+19 - Uses(INT,_)
+stmt s;
+Select s such that Uses (8, _)
+1, 2, 3, 4, 5, 6, 7, 8
+5000
+19 - Negative Uses(syn*,IDENT)
+stmt s;
+Select s such that Uses (s, "abcd")
+none
+5000
+20 - Negative Uses(INT,syn*)
+variable v;
+Select v such that Uses (1, v)
+none
+5000
+21 - Negative Uses(INT,IDENT)
+stmt s;
+Select s such that Uses (1, "a")
+none
+5000
+22 - Negative Uses(INT,_)
+stmt s;
+Select s such that Uses (1, _)
+none
+5000

@@ -1,0 +1,31 @@
+procedure aar {
+    x = 3;
+}
+
+procedure bar {
+    y = 3;
+    y = 3;
+    y = 3;
+    y = 4;
+}
+
+
+procedure car {
+    z = 3;
+}
+
+procedure dar {
+    c = 3;
+}
+
+procedure ear {
+    q = 3;
+}
+
+procedure far {
+    w = 3;
+}
+
+procedure gar {
+   e = 3;
+}

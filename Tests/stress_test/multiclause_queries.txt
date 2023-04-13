@@ -1,0 +1,10 @@
+1 - Optimization prioritises evaluating clauses with single synonym
+stmt s1, s2; if i;
+Select i such that Parent(i, s1) and Parent(i, s2)  such that Modifies(s2, _) and Uses(s1, "aM7")
+384
+5000
+2 - Terminate immediately when clauses with no synonyms evaluate to false
+procedure p, q; variable v; if i, i2; while w, w2;
+Select BOOLEAN such that Calls*(p, q) and Uses(p, v) and Uses(w, v) and Uses(11, "asdasd")
+FALSE
+5000

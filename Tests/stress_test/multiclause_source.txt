@@ -1,0 +1,779 @@
+procedure aa {
+	aa1 = aa1 + aa2;
+	print aa3;
+	read aa4;
+	if (aa5 > aa6) then {
+		print aa7;
+	} else {
+		read aa8;
+	}
+	while (aa9 == aa10) {
+		read aa4;
+		print aa7;
+	}
+	call ab;
+}
+procedure ab {
+	ab1 = ab1 + ab2;
+	print ab3;
+	read ab4;
+	if (ab5 > ab6) then {
+		print ab7;
+	} else {
+		read ab8;
+	}
+	while (ab9 == ab10) {
+		read ab4;
+		print ab7;
+	}
+	call ac;
+}
+procedure ac {
+	ac1 = ac1 + ac2;
+	print ac3;
+	read ac4;
+	if (ac5 > ac6) then {
+		print ac7;
+	} else {
+		read ac8;
+	}
+	while (ac9 == ac10) {
+		read ac4;
+		print ac7;
+	}
+	call ad;
+}
+procedure ad {
+	ad1 = ad1 + ad2;
+	print ad3;
+	read ad4;
+	if (ad5 > ad6) then {
+		print ad7;
+	} else {
+		read ad8;
+	}
+	while (ad9 == ad10) {
+		read ad4;
+		print ad7;
+	}
+	call ae;
+}
+procedure ae {
+	ae1 = ae1 + ae2;
+	print ae3;
+	read ae4;
+	if (ae5 > ae6) then {
+		print ae7;
+	} else {
+		read ae8;
+	}
+	while (ae9 == ae10) {
+		read ae4;
+		print ae7;
+	}
+	call af;
+}
+procedure af {
+	af1 = af1 + af2;
+	print af3;
+	read af4;
+	if (af5 > af6) then {
+		print af7;
+	} else {
+		read af8;
+	}
+	while (af9 == af10) {
+		read af4;
+		print af7;
+	}
+	call ag;
+}
+procedure ag {
+	ag1 = ag1 + ag2;
+	print ag3;
+	read ag4;
+	if (ag5 > ag6) then {
+		print ag7;
+	} else {
+		read ag8;
+	}
+	while (ag9 == ag10) {
+		read ag4;
+		print ag7;
+	}
+	call ah;
+}
+procedure ah {
+	ah1 = ah1 + ah2;
+	print ah3;
+	read ah4;
+	if (ah5 > ah6) then {
+		print ah7;
+	} else {
+		read ah8;
+	}
+	while (ah9 == ah10) {
+		read ah4;
+		print ah7;
+	}
+	call ai;
+}
+procedure ai {
+	ai1 = ai1 + ai2;
+	print ai3;
+	read ai4;
+	if (ai5 > ai6) then {
+		print ai7;
+	} else {
+		read ai8;
+	}
+	while (ai9 == ai10) {
+		read ai4;
+		print ai7;
+	}
+	call aj;
+}
+procedure aj {
+	aj1 = aj1 + aj2;
+	print aj3;
+	read aj4;
+	if (aj5 > aj6) then {
+		print aj7;
+	} else {
+		read aj8;
+	}
+	while (aj9 == aj10) {
+		read aj4;
+		print aj7;
+	}
+	call ak;
+}
+procedure ak {
+	ak1 = ak1 + ak2;
+	print ak3;
+	read ak4;
+	if (ak5 > ak6) then {
+		print ak7;
+	} else {
+		read ak8;
+	}
+	while (ak9 == ak10) {
+		read ak4;
+		print ak7;
+	}
+	call al;
+}
+procedure al {
+	al1 = al1 + al2;
+	print al3;
+	read al4;
+	if (al5 > al6) then {
+		print al7;
+	} else {
+		read al8;
+	}
+	while (al9 == al10) {
+		read al4;
+		print al7;
+	}
+	call am;
+}
+procedure am {
+	am1 = am1 + am2;
+	print am3;
+	read am4;
+	if (am5 > am6) then {
+		print am7;
+	} else {
+		read am8;
+	}
+	while (am9 == am10) {
+		read am4;
+		print am7;
+	}
+	call an;
+}
+procedure an {
+	an1 = an1 + an2;
+	print an3;
+	read an4;
+	if (an5 > an6) then {
+		print an7;
+	} else {
+		read an8;
+	}
+	while (an9 == an10) {
+		read an4;
+		print an7;
+	}
+	call ao;
+}
+procedure ao {
+	ao1 = ao1 + ao2;
+	print ao3;
+	read ao4;
+	if (ao5 > ao6) then {
+		print ao7;
+	} else {
+		read ao8;
+	}
+	while (ao9 == ao10) {
+		read ao4;
+		print ao7;
+	}
+	call ap;
+}
+procedure ap {
+	ap1 = ap1 + ap2;
+	print ap3;
+	read ap4;
+	if (ap5 > ap6) then {
+		print ap7;
+	} else {
+		read ap8;
+	}
+	while (ap9 == ap10) {
+		read ap4;
+		print ap7;
+	}
+	call aq;
+}
+procedure aq {
+	aq1 = aq1 + aq2;
+	print aq3;
+	read aq4;
+	if (aq5 > aq6) then {
+		print aq7;
+	} else {
+		read aq8;
+	}
+	while (aq9 == aq10) {
+		read aq4;
+		print aq7;
+	}
+	call ar;
+}
+procedure ar {
+	ar1 = ar1 + ar2;
+	print ar3;
+	read ar4;
+	if (ar5 > ar6) then {
+		print ar7;
+	} else {
+		read ar8;
+	}
+	while (ar9 == ar10) {
+		read ar4;
+		print ar7;
+	}
+	call as;
+}
+procedure as {
+	as1 = as1 + as2;
+	print as3;
+	read as4;
+	if (as5 > as6) then {
+		print as7;
+	} else {
+		read as8;
+	}
+	while (as9 == as10) {
+		read as4;
+		print as7;
+	}
+	call at;
+}
+procedure at {
+	at1 = at1 + at2;
+	print at3;
+	read at4;
+	if (at5 > at6) then {
+		print at7;
+	} else {
+		read at8;
+	}
+	while (at9 == at10) {
+		read at4;
+		print at7;
+	}
+	call au;
+}
+procedure au {
+	au1 = au1 + au2;
+	print au3;
+	read au4;
+	if (au5 > au6) then {
+		print au7;
+	} else {
+		read au8;
+	}
+	while (au9 == au10) {
+		read au4;
+		print au7;
+	}
+	call av;
+}
+procedure av {
+	av1 = av1 + av2;
+	print av3;
+	read av4;
+	if (av5 > av6) then {
+		print av7;
+	} else {
+		read av8;
+	}
+	while (av9 == av10) {
+		read av4;
+		print av7;
+	}
+	call aw;
+}
+procedure aw {
+	aw1 = aw1 + aw2;
+	print aw3;
+	read aw4;
+	if (aw5 > aw6) then {
+		print aw7;
+	} else {
+		read aw8;
+	}
+	while (aw9 == aw10) {
+		read aw4;
+		print aw7;
+	}
+	call ax;
+}
+procedure ax {
+	ax1 = ax1 + ax2;
+	print ax3;
+	read ax4;
+	if (ax5 > ax6) then {
+		print ax7;
+	} else {
+		read ax8;
+	}
+	while (ax9 == ax10) {
+		read ax4;
+		print ax7;
+	}
+	call ay;
+}
+procedure ay {
+	ay1 = ay1 + ay2;
+	print ay3;
+	read ay4;
+	if (ay5 > ay6) then {
+		print ay7;
+	} else {
+		read ay8;
+	}
+	while (ay9 == ay10) {
+		read ay4;
+		print ay7;
+	}
+	call az;
+}
+procedure az {
+	az1 = az1 + az2;
+	print az3;
+	read az4;
+	if (az5 > az6) then {
+		print az7;
+	} else {
+		read az8;
+	}
+	while (az9 == az10) {
+		read az4;
+		print az7;
+	}
+	call aA;
+}
+procedure aA {
+	aA1 = aA1 + aA2;
+	print aA3;
+	read aA4;
+	if (aA5 > aA6) then {
+		print aA7;
+	} else {
+		read aA8;
+	}
+	while (aA9 == aA10) {
+		read aA4;
+		print aA7;
+	}
+	call aB;
+}
+procedure aB {
+	aB1 = aB1 + aB2;
+	print aB3;
+	read aB4;
+	if (aB5 > aB6) then {
+		print aB7;
+	} else {
+		read aB8;
+	}
+	while (aB9 == aB10) {
+		read aB4;
+		print aB7;
+	}
+	call aC;
+}
+procedure aC {
+	aC1 = aC1 + aC2;
+	print aC3;
+	read aC4;
+	if (aC5 > aC6) then {
+		print aC7;
+	} else {
+		read aC8;
+	}
+	while (aC9 == aC10) {
+		read aC4;
+		print aC7;
+	}
+	call aD;
+}
+procedure aD {
+	aD1 = aD1 + aD2;
+	print aD3;
+	read aD4;
+	if (aD5 > aD6) then {
+		print aD7;
+	} else {
+		read aD8;
+	}
+	while (aD9 == aD10) {
+		read aD4;
+		print aD7;
+	}
+	call aE;
+}
+procedure aE {
+	aE1 = aE1 + aE2;
+	print aE3;
+	read aE4;
+	if (aE5 > aE6) then {
+		print aE7;
+	} else {
+		read aE8;
+	}
+	while (aE9 == aE10) {
+		read aE4;
+		print aE7;
+	}
+	call aF;
+}
+procedure aF {
+	aF1 = aF1 + aF2;
+	print aF3;
+	read aF4;
+	if (aF5 > aF6) then {
+		print aF7;
+	} else {
+		read aF8;
+	}
+	while (aF9 == aF10) {
+		read aF4;
+		print aF7;
+	}
+	call aG;
+}
+procedure aG {
+	aG1 = aG1 + aG2;
+	print aG3;
+	read aG4;
+	if (aG5 > aG6) then {
+		print aG7;
+	} else {
+		read aG8;
+	}
+	while (aG9 == aG10) {
+		read aG4;
+		print aG7;
+	}
+	call aH;
+}
+procedure aH {
+	aH1 = aH1 + aH2;
+	print aH3;
+	read aH4;
+	if (aH5 > aH6) then {
+		print aH7;
+	} else {
+		read aH8;
+	}
+	while (aH9 == aH10) {
+		read aH4;
+		print aH7;
+	}
+	call aI;
+}
+procedure aI {
+	aI1 = aI1 + aI2;
+	print aI3;
+	read aI4;
+	if (aI5 > aI6) then {
+		print aI7;
+	} else {
+		read aI8;
+	}
+	while (aI9 == aI10) {
+		read aI4;
+		print aI7;
+	}
+	call aJ;
+}
+procedure aJ {
+	aJ1 = aJ1 + aJ2;
+	print aJ3;
+	read aJ4;
+	if (aJ5 > aJ6) then {
+		print aJ7;
+	} else {
+		read aJ8;
+	}
+	while (aJ9 == aJ10) {
+		read aJ4;
+		print aJ7;
+	}
+	call aK;
+}
+procedure aK {
+	aK1 = aK1 + aK2;
+	print aK3;
+	read aK4;
+	if (aK5 > aK6) then {
+		print aK7;
+	} else {
+		read aK8;
+	}
+	while (aK9 == aK10) {
+		read aK4;
+		print aK7;
+	}
+	call aL;
+}
+procedure aL {
+	aL1 = aL1 + aL2;
+	print aL3;
+	read aL4;
+	if (aL5 > aL6) then {
+		print aL7;
+	} else {
+		read aL8;
+	}
+	while (aL9 == aL10) {
+		read aL4;
+		print aL7;
+	}
+	call aM;
+}
+procedure aM {
+	aM1 = aM1 + aM2;
+	print aM3;
+	read aM4;
+	if (aM5 > aM6) then {
+		print aM7;
+	} else {
+		read aM8;
+	}
+	while (aM9 == aM10) {
+		read aM4;
+		print aM7;
+	}
+	call aN;
+}
+procedure aN {
+	aN1 = aN1 + aN2;
+	print aN3;
+	read aN4;
+	if (aN5 > aN6) then {
+		print aN7;
+	} else {
+		read aN8;
+	}
+	while (aN9 == aN10) {
+		read aN4;
+		print aN7;
+	}
+	call aO;
+}
+procedure aO {
+	aO1 = aO1 + aO2;
+	print aO3;
+	read aO4;
+	if (aO5 > aO6) then {
+		print aO7;
+	} else {
+		read aO8;
+	}
+	while (aO9 == aO10) {
+		read aO4;
+		print aO7;
+	}
+	call aP;
+}
+procedure aP {
+	aP1 = aP1 + aP2;
+	print aP3;
+	read aP4;
+	if (aP5 > aP6) then {
+		print aP7;
+	} else {
+		read aP8;
+	}
+	while (aP9 == aP10) {
+		read aP4;
+		print aP7;
+	}
+	call aQ;
+}
+procedure aQ {
+	aQ1 = aQ1 + aQ2;
+	print aQ3;
+	read aQ4;
+	if (aQ5 > aQ6) then {
+		print aQ7;
+	} else {
+		read aQ8;
+	}
+	while (aQ9 == aQ10) {
+		read aQ4;
+		print aQ7;
+	}
+	call aR;
+}
+procedure aR {
+	aR1 = aR1 + aR2;
+	print aR3;
+	read aR4;
+	if (aR5 > aR6) then {
+		print aR7;
+	} else {
+		read aR8;
+	}
+	while (aR9 == aR10) {
+		read aR4;
+		print aR7;
+	}
+	call aS;
+}
+procedure aS {
+	aS1 = aS1 + aS2;
+	print aS3;
+	read aS4;
+	if (aS5 > aS6) then {
+		print aS7;
+	} else {
+		read aS8;
+	}
+	while (aS9 == aS10) {
+		read aS4;
+		print aS7;
+	}
+	call aT;
+}
+procedure aT {
+	aT1 = aT1 + aT2;
+	print aT3;
+	read aT4;
+	if (aT5 > aT6) then {
+		print aT7;
+	} else {
+		read aT8;
+	}
+	while (aT9 == aT10) {
+		read aT4;
+		print aT7;
+	}
+	call aU;
+}
+procedure aU {
+	aU1 = aU1 + aU2;
+	print aU3;
+	read aU4;
+	if (aU5 > aU6) then {
+		print aU7;
+	} else {
+		read aU8;
+	}
+	while (aU9 == aU10) {
+		read aU4;
+		print aU7;
+	}
+	call aV;
+}
+procedure aV {
+	aV1 = aV1 + aV2;
+	print aV3;
+	read aV4;
+	if (aV5 > aV6) then {
+		print aV7;
+	} else {
+		read aV8;
+	}
+	while (aV9 == aV10) {
+		read aV4;
+		print aV7;
+	}
+	call aW;
+}
+procedure aW {
+	aW1 = aW1 + aW2;
+	print aW3;
+	read aW4;
+	if (aW5 > aW6) then {
+		print aW7;
+	} else {
+		read aW8;
+	}
+	while (aW9 == aW10) {
+		read aW4;
+		print aW7;
+	}
+	call aX;
+}
+procedure aX {
+	aX1 = aX1 + aX2;
+	print aX3;
+	read aX4;
+	if (aX5 > aX6) then {
+		print aX7;
+	} else {
+		read aX8;
+	}
+	while (aX9 == aX10) {
+		read aX4;
+		print aX7;
+	}
+	call aY;
+}
+procedure aY {
+	aY1 = aY1 + aY2;
+	print aY3;
+	read aY4;
+	if (aY5 > aY6) then {
+		print aY7;
+	} else {
+		read aY8;
+	}
+	while (aY9 == aY10) {
+		read aY4;
+		print aY7;
+	}
+	call aZ;
+}
+procedure aZ {
+	aZ1 = aZ1 + aZ2;
+	print aZ3;
+	read aZ4;
+	if (aZ5 > aZ6) then {
+		print aZ7;
+	} else {
+		read aZ8;
+	}
+	while (aZ9 == aZ10) {
+		read aZ4;
+		print aZ7;
+	}
+}

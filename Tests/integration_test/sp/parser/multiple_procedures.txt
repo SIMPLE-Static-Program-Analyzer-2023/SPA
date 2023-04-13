@@ -1,0 +1,17 @@
+procedure main {
+    flag = 0;
+    call computeCentroid;
+    call printResults;
+}
+
+procedure readPoint {
+    read x;
+    read y;
+}
+
+procedure printResults {
+    print flag;
+    print cenX;
+    print cenY;
+    print normSq;
+}

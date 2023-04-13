@@ -1,0 +1,43 @@
+procedure ear {
+    q = 3;
+    call far;
+}
+
+procedure aar {
+    x = 3;
+    call bar;
+}
+procedure car {
+    z = 3;
+    call dar;
+    call gar;
+}
+
+procedure far {
+    w = 3;
+    call gar;
+}
+
+procedure gar {
+   e = 3;
+   call aar;
+}
+
+
+procedure bar {
+    y = 3;
+    y = 3;
+    y = 3;
+    y = 4;
+    call car;
+}
+
+
+
+procedure dar {
+    c = 3;
+    call ear;
+}
+
+
+
